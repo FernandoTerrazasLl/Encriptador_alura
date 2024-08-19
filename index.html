@@ -9,13 +9,11 @@
 </head>
 
 <body>
-
     <main class="main">
         <img class="logo" src="./imagenes/logo.png" alt="Logo">
         
         <div class="contenedor_principal">
             <input class="texto_principal" type="text"  placeholder="Ingrese el texto aqui">
-            
             
             <div class="botones">
                 <p class="advertencia"><img class="advertencia_imagenes" src="./imagenes/advertencia.png" alt="Simbolo de precaucion">Solo letras minúsculas y sin acentos</p>
@@ -24,16 +22,15 @@
             </div>
         </div>
 
-        <section class="encriptar">
+        <section class="encriptar" id="encriptar">
                 <textarea id="Copiar_texto" cols="80" rows="8" class="output"></textarea>
                 <img id="reloj"class= encriptar_imagen src="./imagenes/clock.png" alt="Esperando texto para encriptar o desincreptar">
-
 
             <div class="encriptar_textos">
                 <h2 class="encriptar_texto1">Ningun texto fue encontrado</h2>
                 <p class="encriptar_texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-            <button class="Copiar"  onclick="copiarTexto()">Copiar</button>
+            <button class="Copiar" id="Copiar" onclick="copiarTexto()">Copiar</button>
         </section>
     </main>
 <script src="script.js"></script>

@@ -2,15 +2,17 @@ const textArea = document.querySelector(".texto_principal");
 const mensaje = document.querySelector(".output");
 const imagen = document.getElementById("reloj");
 const texto = document.querySelector(".encriptar_textos");
-
+const copiar = document.getElementById("Copiar");
+const encriptacion = document.querySelector(".encriptar");
 
 function botonEncriptar(){
-    const textoEncriptado = encriptar(textArea.value)
-    mensaje.value = textoEncriptado
-    textArea.value = " ";
+    const textoEncriptado = encriptar(textArea.value);
+    mensaje.value = textoEncriptado;
+    textArea.value = "";
     imagen.style.display = 'none';
     texto.style.display = 'none';
-
+    copiar.style.display = 'block';
+    encriptacion.style.height = "690px";
 }
 
 function encriptar(stringEncriptar){
