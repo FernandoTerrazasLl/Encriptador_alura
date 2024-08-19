@@ -4,6 +4,8 @@ const imagen = document.getElementById("reloj");
 const texto = document.querySelector(".encriptar_textos");
 const copiar = document.getElementById("Copiar");
 const encriptacion = document.querySelector(".encriptar");
+const boton1= document.querySelector(".boton1");
+const boton2= document.querySelector(".boton2");
 
 function botonEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
@@ -12,7 +14,12 @@ function botonEncriptar(){
     imagen.style.display = 'none';
     texto.style.display = 'none';
     copiar.style.display = 'block';
-    encriptacion.style.height = "690px";
+    if(encriptacion.style.width<="375px"){
+        encriptacion.style.height = "390px";
+    }else{
+        encriptacion.style.height = "690px";
+    }
+    
 }
 
 function encriptar(stringEncriptar){
