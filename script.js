@@ -16,7 +16,7 @@ function botonEncriptar(){
     copiar.style.display = 'block';
     if(encriptacion.style.width<="375px"){
         encriptacion.style.height = "390px";
-    }else{
+    }else if(encriptacion.style.width<="768px"){
         encriptacion.style.height = "690px";
     }
     
