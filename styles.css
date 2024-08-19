@@ -1,5 +1,9 @@
 /*TECNICA PARA RECARGAR LA PAGINA, BUSCAR*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: "Inter";
+}
+
 body{
     background-color: #e4f4fd;
 }
@@ -58,9 +62,12 @@ body{
     margin-right: 8px;
     background-color: darkblue;
     color: lightblue;
-    border-color: darkblue;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
 
 }
+
 .boton2{
     width: 200px;
     height: 50px;
@@ -70,7 +77,8 @@ body{
     background-color: lightblue;
     color: darkblue;
     border: 1px;
-    border-color: darkblue;
+    border-style: solid;
+    border-color: black;
 
 }
 
@@ -84,14 +92,29 @@ body{
     height: 550px;
     margin-top: 40px;
     border-radius: 32px;
-
 }
+
 .encriptar_imagen{
     width: 336px;
     height: 304px;
-
-
+    position: absolute;
 }
+
+.output{
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-right: 90px;
+    margin-left: 90px;
+    font-size: 24px;
+    width: 300px;
+    border: none;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    height: 400px;
+    color: #495057;
+}
+
 .encriptar_textos{
     display: flex;
     flex-direction: column;
@@ -99,17 +122,31 @@ body{
     text-align: center;
     width: 236px;
     height: 122px;
-    margin-top: 15px;
-
+    margin-top: 300px;
+    position:absolute;
 }
+
 .encriptar_texto1{
     font-family: "inter";
     font-weight: 700px;
     font-size: 24px;
 }
+
 .encriptar_texto2{
     font-family: "inter";
     font-weight: 400px;
     font-size: 16px;
     margin-top: 0px;
+}
+
+.Copiar{
+    width: 236px;
+    height: 40px;
+    border-radius: 24px;
+    margin-top: 30px;
+    background-color: lightblue;
+    color: darkblue;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
 }
